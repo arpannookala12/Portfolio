@@ -1,0 +1,52 @@
+/* F1 Theme Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #1e1e1e; /* Dark F1 aesthetic */
+    color: #eee;
+  }
+  
+  .f1-header {
+    background: linear-gradient(to right, #d91e18, #1e1e1e);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .f1-hero {
+    background: url('../images/f1-track.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .f1-btn {
+    background: #d91e18;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .f1-btn:hover {
+    background: #fff;
+    color: #d91e18;
+  }
+  
+  .project-card {
+    background: #333;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .project-card h3 {
+    color: #d91e18;
+  }
+  
+  .project-card .tags {
+    display: block;
+    margin-top: 0.5rem;
+    color: #bbb;
+  }
+  
