@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Ganesh Arpan Nookala</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Arpan Nookala</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="f1-header">
-    <div class="container">
-      <h1>Contact</h1>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">Arpan Nookala</a>
     </div>
-  </header>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section id="contact" class="f1-contact">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <form action="mailto:arpan.nookala@rutgers.edu" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
+  <section class="page-banner">
+    <h1>Contact</h1>
+    <p>Get in touch or let's collaborate!</p>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ganesh Arpan Nookala. All rights reserved.</p>
-    </div>
+  <section class="content-section">
+    <h2>Let's Connect</h2>
+    <p>
+      If you'd like to reach out, collaborate, or have any questions, feel free to 
+      contact me via the following channels:
+    </p>
+    <ul class="custom-list">
+      <li><strong>Email:</strong> <a href="mailto:arpan.nookala@rutgers.edu">arpan.nookala@rutgers.edu</a></li>
+      <li><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/arpan-nookala" target="_blank">
+          linkedin.com/in/arpan-nookala
+        </a>
+      </li>
+      <li><strong>GitHub:</strong> 
+        <a href="https://github.com/arpannookala12" target="_blank">
+          github.com/arpannookala12
+        </a>
+      </li>
+      <!-- Add other platforms like Kaggle, Medium, Twitter if you wish -->
+    </ul>
+    <p>
+      You can also find my latest 
+      <a href="#">Résumé/CV</a> here (link to a PDF or Google Drive).
+    </p>
+    <p>
+      I look forward to hearing from you!
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Arpan Nookala. All rights reserved.</p>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

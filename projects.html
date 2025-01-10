@@ -1,52 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Ganesh Arpan Nookala</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/f1-theme.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Arpan Nookala</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header class="f1-header">
-    <div class="container">
-      <h1>Projects</h1>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">Arpan Nookala</a>
     </div>
-  </header>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Projects Section -->
-  <section id="projects" class="f1-projects">
-    <div class="container">
-      <h2>My Projects</h2>
+  <!-- Banner -->
+  <section class="page-banner">
+    <h1>Projects</h1>
+    <p>Integrating IoT, ML, and Advanced Analytics</p>
+  </section>
 
-      <!-- Project 1 -->
-      <div class="project-card">
-        <h3>Research Paper Recommendation System</h3>
+  <section class="content-section">
+
+    <!-- MODULE 1: Early Explorations & IoT -->
+    <h2>Module 1: Early Explorations & IoT</h2>
+
+    <!-- Project 1: Pot-in-Pot Refrigerator -->
+    <article class="project-card">
+      <h3>1. Pot-in-Pot Refrigerator (Jan – Mar 2020)</h3>
+      <p>
+        <strong>Short Description:</strong> Built an eco-friendly 
+        refrigerator using two clay pots and integrated an IoT module (Bolt IoT) 
+        to log hourly temperatures, then applied polynomial regression to predict future temperatures.
+      </p>
+      <!-- Read More Toggle -->
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
         <p>
-          Developed an ML-powered recommendation system leveraging TF-IDF and SBERT embeddings. Fine-tuned models for improved academic paper suggestions.
+          <strong>Objective:</strong> Create an environmentally sound fridge 
+          by placing a smaller clay pot inside a larger one, sealing the gap with sand 
+          and watering it occasionally to keep temperatures low. Leveraged Bolt IoT 
+          to collect temperature data and employed polynomial regression to predict 
+          temperature variations.
         </p>
-        <span class="tags">Python | NLP | Streamlit</span>
+        <ul>
+          <li><strong>Tools & Tech:</strong> Bolt IoT, Polynomial Regression, Basic Analytics</li>
+          <li><strong>Outcome:</strong> Learned foundational data collection & ML concepts, 
+              bridging physical engineering with data-driven insights.</li>
+        </ul>
       </div>
+    </article>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <h3>Deep Reinforcement Learning for Traffic Control</h3>
+    <!-- Project 2: Fire Detection & Localization -->
+    <article class="project-card">
+      <h3>2. Fire Detection & Localization (Jan – Jun 2021)</h3>
+      <p>
+        <strong>Short Description:</strong> A rapid fire detection system 
+        leveraging Google’s Inception V3 + IoT. Achieved ~87% validation accuracy 
+        on Fire/Smoke/Neutral scenes, integrating Telegram alerts for real-time notifications.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
         <p>
-          Built DRL models (DDPG, DQN) to reduce waiting times at intersections by up to 67%. Published results in IEEE TENSYMP 2023.
+          <strong>Objective & Approach:</strong> Developed a deep learning model 
+          (Inception V3) trained on images of fire, smoke, and neutral scenes to accurately 
+          detect fire in indoor/outdoor environments. Combined with a Bolt Wi-Fi module 
+          and a piezo buzzer for hardware alerts, plus real-time video analysis (OpenCV).
         </p>
-        <span class="tags">Python | DRL | Traffic Systems</span>
+        <p>
+          <strong>Dataset & Augmentation:</strong> 3,000 images (Fire, Smoke, Neutral) 
+          with flipping and zoom-based augmentations. Achieved 91.05% training accuracy, 
+          87.23% validation after 10 epochs.
+        </p>
+        <p>
+          <strong>System Integration:</strong> Sends alert messages + captured frames 
+          to a Telegram chatbot when detection confidence exceeds threshold. Overfitting 
+          mitigated via dropout layers; Inception V3’s sparsely connected architecture 
+          optimized computational efficiency.
+        </p>
+        <p><strong>Future Scope:</strong> Scalability with multiple IoT devices, 
+          improved localization with bounding boxes and GPS data.</p>
       </div>
+    </article>
+  </section>
 
-      <!-- Add More Projects -->
-    </div>
+  <section class="content-section">
+    <!-- MODULE 2: Jumping into ML & AI -->
+    <h2>Module 2: Jumping into ML & AI</h2>
+
+    <!-- Project: Credit Card Fraud Detection -->
+    <article class="project-card">
+      <h3>3. Credit Card Fraud Detection (Oct – Dec 2023)</h3>
+      <p>
+        <strong>Short Description:</strong> Logistic regression with SMOTE 
+        to tackle class imbalance, achieving 95% ROC AUC. Operationalized model 
+        to categorize transactions by risk level.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Data & Methods:</strong> Worked on a dataset of credit card transactions 
+          from European cardholders. Engineered features (binning, WoE, IV) to improve model 
+          performance. Achieved a 95% ROC AUC by addressing significant class imbalance 
+          via SMOTE.
+        </p>
+        <p>
+          <strong>Deployment & Visualization:</strong> Provided donut charts for 
+          interpretability, dividing outcomes into risk categories for real-world usage. 
+          Managed version control with Git and continuously refined features 
+          for better fraud detection.
+        </p>
+      </div>
+    </article>
+
+    <!-- Project: Formula 1 Data Wrangling & Analysis -->
+    <article class="project-card">
+      <h3>4. Formula 1 Data Wrangling & Analysis (Mar – Apr 2024)</h3>
+      <p>
+        <strong>Short Description:</strong> Pulled data from the Ergast API 
+        to explore F1 metrics. Built & deployed a Quarto site for interactive 
+        visualizations using Python, FastF1, and SQLite.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Approach:</strong> Used Ergast API for driver, race, lap-time, 
+          and pit-stop data. Performed extensive EDA and feature creation, 
+          visualizing patterns (lap-time deltas, pit strategy comparisons) 
+          with advanced Python libraries.
+        </p>
+        <p>
+          <strong>Outcome:</strong> Deployed a Quarto-based webpage that includes 
+          dashboards, interactive plots, and data insights. Demonstrated 
+          how to transform raw motorsport data into meaningful, visually appealing 
+          analytics for fans and decision-makers.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="content-section">
+    <!-- MODULE 3: Reinforcement Learning Endeavors -->
+    <h2>Module 3: Reinforcement Learning Endeavors</h2>
+
+    <!-- Project: DRL-Based Automated Stock Trading -->
+    <article class="project-card">
+      <h3>5. DRL-Based Automated Stock Trading: Short Selling (Jan 2021 – Oct 2022)</h3>
+      <p>
+        <strong>Short Description:</strong> Integrated short-selling thresholds 
+        into a DRL stock trading framework. Achieved +11.4% p.a. with 
+        ~10% lower max drawdown, second-authored a paper in Springer LNAI.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Objective & Approach:</strong> Extended existing DRL-based 
+          automated trading architecture to include short positions for 
+          volatile market scenarios. Ran multiple experiments under varied 
+          market turbulence levels to identify optimal shorting thresholds.
+        </p>
+        <p>
+          <strong>Key Results:</strong> Proposed models outperformed older 
+          methods by 11.4% annualized returns and a 10% lower max drawdown. 
+          This research was presented at the 26th International Symposium 
+          on Methodologies for Intelligent Systems (Cosenza, Italy).
+        </p>
+        <p>
+          <strong>Tech Stack:</strong> Python, OpenAI Gym, DRL algorithms, 
+          Financial Indicators, Algorithmic Trading frameworks.
+        </p>
+      </div>
+    </article>
+
+    <!-- Project: DRL Intelligent Traffic Control -->
+    <article class="project-card">
+      <h3>6. Deep Reinforcement Learning Based Intelligent Traffic Control (Jul 2022 – Sep 2023)</h3>
+      <p>
+        <strong>Short Description:</strong> Used DQN, DDPG to optimize traffic 
+        signal timing, reducing average waiting times by up to 23%. First-author 
+        paper at IEEE TENSYMP 2023.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Approach:</strong> Simulated an intersection grid environment, 
+          comparing DRL agents (DQN, DDPG) vs. fixed-signal baselines. 
+          Achieved a 67% decrease in average wait time over legacy systems, 
+          with best results from DQN + environment-specific tuning.
+        </p>
+        <p>
+          <strong>Publication:</strong> First-author publication in 
+          <em>2023 IEEE Region 10 Symposium (TENSYMP)</em>, Canberra, Australia.
+        </p>
+        <p>
+          <strong>Impact:</strong> Real potential for city-scale traffic optimization, 
+          reducing congestion, fuel consumption, and pollution. 
+          Showcased synergy between RL and transportation engineering.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="content-section">
+    <!-- MODULE 4: Industry & Research Experience -->
+    <h2>Module 4: Industry & Research Experience</h2>
+
+    <!-- Internship: Google via DKSH Smollan -->
+    <article class="project-card">
+      <h3>7. Internship at Google (via DKSH Smollan) (Jul 2021 – Jul 2022)</h3>
+      <p>
+        <strong>Short Description:</strong> Built a RASA chatbot for Google’s 
+        Retail Service Agents with multilingual support, integrated with 
+        Telegram & WhatsApp. Reduced pipeline load time by 50% using BigQuery optimizations.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Chatbot Development:</strong> Leveraged RASA framework, 
+          Telegram API, and Twilio for WhatsApp integration. Hosted on GCP, 
+          offering English, Hindi, Hinglish, and Korean language support. 
+          Orchestrated containerized microservices in GCP.
+        </p>
+        <p>
+          <strong>Business Intelligence Pipeline:</strong> Managed SQL DBs 
+          in Google BigQuery, cutting dashboard load times by 50%. 
+          Built data visualizations with Google Data Studio, enabling 
+          faster, fact-based decisions.
+        </p>
+        <p>
+          <strong>Team Leadership & Tech Stack:</strong> Led a team of five, 
+          employing Python, Web Scraping, Data Visualization, Cloud Computing, 
+          SQL, Docker, Git, Flask, RASA. 
+        </p>
+      </div>
+    </article>
+
+    <!-- RA at Rutgers Urban and Civic Informatics Lab -->
+    <article class="project-card">
+      <h3>8. Data Scientist (Research Assistant) at Rutgers Urban & Civic Informatics Lab (Feb 2024 – Present)</h3>
+      <p>
+        <strong>Short Description:</strong> Generating a synthetic population 
+        using ACS & Household Pulse Survey data to estimate teleworking days. 
+        Exploring IPF, XGBoost, and GANs.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Project Scope:</strong> Build small-area estimates of teleworking 
+          days among individuals. Started with Iterative Proportional Fitting 
+          (deterministic), now exploring gradient boosting trees (XGBoost) and 
+          GAN-based frameworks for more robust synthetic population generation.
+        </p>
+        <p>
+          <strong>Tech Stack & Concepts:</strong> Statistical computing with R 
+          and Python, Multinomial Logistic Regression, GIS analysis, Generative 
+          Adversarial Networks. 
+        </p>
+        <p>
+          <strong>Impact:</strong> Aids public policy and urban planning by 
+          predicting telework patterns, relevant for infrastructure and 
+          transportation resource allocation.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="content-section">
+    <!-- MODULE 5: End-to-End Data Projects & Publications -->
+    <h2>Module 5: End-to-End Data Projects & Publications</h2>
+
+    <!-- Research Paper Recommendation System -->
+    <article class="project-card">
+      <h3>9. Research Paper Recommendation System</h3>
+      <p>
+        <strong>Short Description:</strong> NLP-based paper recommendation 
+        system using TF-IDF, all-MiniLM-L6-v2, and allenai-specter embeddings. 
+        Deployed a RAG-based approach with flan-t5 for explainability.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Methodology:</strong> Pulled ~100,000 ArXiv papers, 
+          preprocessed abstracts (lemmatization, stopword removal), 
+          then stored embeddings in LanceDB for scalable retrieval. 
+          Fine-tuned for better context alignment, especially for 
+          specialized domains (Reinforcement Learning, traffic control).
+        </p>
+        <p>
+          <strong>Explainability:</strong> A Retrieval-Augmented Generation (RAG) 
+          system with google/flan-t5-large provided natural-language explanations 
+          for recommended papers, enhancing user trust and transparency.
+        </p>
+        <p>
+          <strong>Challenges & Outcomes:</strong> Balanced resource constraints 
+          and scoring optimization. allenai-specter showed strong performance 
+          for domain-specific tasks. 
+        </p>
+      </div>
+    </article>
+
+    <!-- Commodity Trading using Weather Data -->
+    <article class="project-card">
+      <h3>10. Commodity Trading using Alternative Data Sources (Weather)</h3>
+      <p>
+        <strong>Short Description:</strong> Devised coffee trading strategies 
+        by integrating weather anomalies with technical indicators (MACD, RSI, 
+        Bollinger Bands). Improved robustness and adaptability in volatile markets.
+      </p>
+      <button class="btn read-more-btn">Read More</button>
+      <div class="read-more-content hidden">
+        <p>
+          <strong>Objective & Approach:</strong> Focus on coffee commodity 
+          trading from Jan 2020 – Nov 2024. Aggregated hourly weather 
+          into daily summaries, capturing frost, drought, rainfall anomalies, 
+          and seasonal trends. Combined with standard technical indicators 
+          for trend-following + mean-reversion.
+        </p>
+        <p>
+          <strong>Performance Evaluation:</strong> Examined Sharpe, Sortino, 
+          Calmar ratios, and drawdowns. Strategies using weather data showed 
+          more stable returns vs. purely technical approaches, highlighting 
+          synergy of exogenous data in mitigating risk.
+        </p>
+      </div>
+    </article>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Ganesh Arpan Nookala. All rights reserved.</p>
-    </div>
+  <footer class="footer">
+    <p>&copy; 2025 Arpan Nookala. All rights reserved.</p>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
