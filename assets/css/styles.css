@@ -44,7 +44,7 @@
   
   /* ========== HERO SECTION ========== */
   .hero {
-    background: url('https://via.placeholder.com/1200x600/444/fff?text=Hero+Image') no-repeat center center/cover;
+    background: url('assets/img/hero.png') no-repeat center center/cover;
     color: #fff;
     height: 80vh;
     display: flex;
