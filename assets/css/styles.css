@@ -131,6 +131,74 @@
     line-height: 1.6;
   }
   
+ /************************************
+ Experience
+ *************************************/
+ .experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .experience-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .exp-header h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .exp-timeframe {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+
+  .exp-org {
+    font-style: italic;
+    color: #95a5a6;
+    margin-bottom: 1rem;
+  }
+
+  .exp-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .exp-details li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 1rem;
+  }
+
+  .exp-details li:last-child {
+    margin-bottom: 0;
+  }
+
+  .exp-details strong {
+    color: var(--primary-color);
+  }
+
   /***********************************
     Skills Section
   ************************************/
