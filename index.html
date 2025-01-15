@@ -5,8 +5,15 @@
   <meta name="description" content="Arpan Nookala | Data Scientist Portfolio" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arpan Nookala | Portfolio</title>
+
   <!-- Main CSS -->
+  <!-- 
+    NOTE: You'd have a styles.css file in assets/css. 
+    Make sure to include classes for new sections like .timeline, .timeline-item, etc.
+    Below is a reference link to your existing stylesheet.
+  -->
   <link rel="stylesheet" href="assets/css/styles.css" />
+
   <!-- Font Awesome (icons) -->
   <link
     rel="stylesheet"
@@ -26,6 +33,7 @@
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#timeline" class="nav-link">Experience</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -37,10 +45,16 @@
   </header>
 
   <!-- ================= HOME SECTION ================= -->
-  <section class="home section" id="home">
+  <!-- 
+    Suggestion: Use a subtle background image or gradient.
+    For example, you can add a CSS background in .home 
+    or use an inline style with background-image URL. 
+  -->
+  <section class="home section" id="home" 
+           style="background: url('assets/img/home-bg.jpg') center/cover no-repeat;">
     <div class="home-container">
       <h1 class="home-title">Hi, I'm Arpan</h1>
-      <p class="home-subtitle">Data Scientist | ML Engineer | Reinforcement Learning Researcher</p>
+      <p class="home-subtitle">Data Scientist | ML Engineer | Researcher | Data Analyst</p>
       <a href="#about" class="btn home-btn">Learn More</a>
     </div>
   </section>
@@ -56,19 +70,165 @@
       </div>
       <div class="about-content">
         <p>
-          I'm currently a Data Science graduate student at Rutgers University with
-          a deep interest in IoT, advanced Machine Learning, and AI. My background
-          in Electronics Engineering gave me hands-on experiences building sensor-based
-          systems and real-time data pipelines.
+          I’m currently a Data Science graduate student at Rutgers University
+          with a deep interest in IoT, advanced Machine Learning, AI, and Data Engineering. 
+          My journey began with electronics engineering projects—building sensor-based systems 
+          and real-time data pipelines. Over time, I delved into data wrangling, advanced 
+          analytics, and MLOps for large-scale deployments.
         </p>
         <p>
-          Over time, I've explored advanced ML topics like Deep Reinforcement
-          Learning, Generative Adversarial Networks, and MLOps for large-scale
-          deployments. I love bridging cutting-edge research with real-world
-          solutions—be it an eco-friendly pot-in-pot refrigerator with IoT temperature
-          logging or a DRL-based intelligent traffic management system.
+          I love bridging cutting-edge research with real-world solutions—whether it’s an 
+          eco-friendly pot-in-pot refrigerator with IoT temperature logging or a 
+          Deep Reinforcement Learning-based intelligent traffic management system. 
+          My core passions lie in deploying robust, scalable, and data-driven 
+          solutions to tackle global challenges.
+        </p>
+        <p>
+          In my spare time, I enjoy exploring new data visualization tools, 
+          building chatbots, and staying updated with the latest in AI and 
+          research methodologies. Currently, I'm pushing the boundaries 
+          at the intersection of urban data science, synthetic population generation, 
+          and advanced ML frameworks.
         </p>
         <a href="#contact" class="btn">Connect with Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE TIMELINE SECTION ================= -->
+  <section class="timeline section" id="timeline">
+    <h2 class="section-title">Experience Timeline</h2>
+    <div class="timeline-container container">
+      <!-- Timeline Item 1: Undergraduate -->
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2020 - Mar 2020</div>
+        <div class="timeline-content">
+          <h3>Undergraduate (Electronics Engineering) - Environmental Science Class</h3>
+          <p>
+            Explored environmental sustainability and basic IoT integration while 
+            building the Pot-in-Pot Refrigerator project. This laid the foundation 
+            for my passion in data logging and predictive modeling.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2: Fire Detection -->
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2021 - Jun 2021</div>
+        <div class="timeline-content">
+          <h3>Fire Detection and Localization Project</h3>
+          <p>
+            Built a system using Google's Inception V3 model for fire and smoke detection. 
+            Integrated with IoT hardware for real-time Telegram alerts. 
+            This exposed me to advanced CNN architectures and real-time alerting pipelines.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3: DRL Stock Trading -->
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2021 - Oct 2022</div>
+        <div class="timeline-content">
+          <h3>Deep Reinforcement Learning Automated Stock Trading</h3>
+          <p>
+            Proposed shorting strategies using DRL frameworks. Achieved better 
+            annual performance and lower drawdowns. Presented research paper 
+            at the 26th International Symposium on Methodologies for Intelligent Systems. 
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 4: Google Internship via DKSH Smollan -->
+      <div class="timeline-item">
+        <div class="timeline-date">Jul 2021 - Jul 2022</div>
+        <div class="timeline-content">
+          <h3>Internship at Google (via DKSH Smollan)</h3>
+          <p>
+            Developed a multilingual Chatbot using RASA for Google Retail Service Agents. 
+            Managed SQL databases, built BI pipelines with BigQuery, and deployed microservices 
+            on Google Cloud to enhance scalability and reduce load times by 50%.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 5: DRL Traffic Control -->
+      <div class="timeline-item">
+        <div class="timeline-date">Jul 2022 - Sep 2023</div>
+        <div class="timeline-content">
+          <h3>DRL-based Intelligent Traffic Control</h3>
+          <p>
+            Implemented Deep Deterministic Policy Gradient and DQN for traffic signal optimization, 
+            reducing average waiting times by up to 23%. First authored and presented a research paper 
+            at IEEE TENSYMP 2023. 
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 6: Credit Card Fraud Detection -->
+      <div class="timeline-item">
+        <div class="timeline-date">Oct 2023 - Dec 2023</div>
+        <div class="timeline-content">
+          <h3>Credit Card Fraud Detection</h3>
+          <p>
+            Developed a logistic regression model with SMOTE for class imbalance, 
+            achieving 95% ROC AUC. Utilized binning and WOE for feature engineering 
+            and visualized performance via donut charts for real-world usage.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 7: Data Scientist at Rutgers Urban and Civic Informatics Lab -->
+      <div class="timeline-item">
+        <div class="timeline-date">Feb 2024 - Present</div>
+        <div class="timeline-content">
+          <h3>Data Scientist (Research Assistant) at Rutgers UCI Lab</h3>
+          <p>
+            Generating synthetic populations using ACS and Household Pulse Survey data 
+            for small area estimation of teleworking days. Experimenting with 
+            Gradient Boosting Trees, XGBoost, and GANs to push the limits 
+            of population modeling and validation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 8: Formula 1 Data Wrangling -->
+      <div class="timeline-item">
+        <div class="timeline-date">Mar 2024 - Apr 2024</div>
+        <div class="timeline-content">
+          <h3>Formula 1 Data Wrangling & Analysis</h3>
+          <p>
+            Extracted and analyzed data from the Ergast API. Built a Quarto-based 
+            webpage for visualization, EDA, and feature creation. Showcased advanced 
+            Python packages and data collection techniques.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 9: Research Paper Recommendation System -->
+      <div class="timeline-item">
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content">
+          <h3>Research Paper Recommendation System</h3>
+          <p>
+            Employed NLP with TF-IDF, all-MiniLM-L6-v2, and allenai-specter embeddings 
+            for relevant paper recommendations. Stored embeddings in LanceDB for 
+            efficient retrieval. Integrated a RAG-based approach with google/flan-t5-large 
+            for natural language explanations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 10: Commodity Trading with Alternative Data -->
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2020 - Nov 2024 (Ongoing Studies)</div>
+        <div class="timeline-content">
+          <h3>Commodity Trading Using Alternative Data (Weather)</h3>
+          <p>
+            Developed trading strategies for coffee using weather and technical indicators. 
+            Aggregated hourly weather data into daily summaries. Combined trend-following 
+            and mean-reversion strategies, resulting in improved adaptability and performance. 
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -105,43 +265,251 @@
     <h2 class="section-title">Projects</h2>
     <div class="projects-container container">
 
-      <!-- Example Project Card 1 -->
+      <!-- Project Card 1: Pot-in-Pot Refrigerator -->
       <div class="project-card">
-        <h3 class="project-title">Pot-in-Pot Refrigerator (Jan – Mar 2020)</h3>
+        <h3 class="project-title">1. Pot-in-Pot Refrigerator (Jan – Mar 2020)</h3>
         <p class="project-short">
-          Eco-friendly fridge using two clay pots with IoT (Bolt) for temperature logging,
-          plus polynomial regression for predictive modeling.
+          Eco-friendly fridge using two clay pots, integrated with Bolt IoT for temperature logging and polynomial regression-based prediction.
         </p>
         <button class="btn toggle-btn">Read More</button>
         <div class="project-details hidden">
           <p>
-            <strong>Objective:</strong> Build a sustainable “cooling” mechanism using
-            clay pots. Logged temperature hourly and used polynomial regression
-            to forecast temperature changes. Learned the fundamentals of bridging
-            hardware with analytics.
+            <strong>Context:</strong> Undergraduate first-year project in Electronics Engineering 
+            for Environmental Science Class.
+          </p>
+          <p>
+            <strong>Objective:</strong> Build a sustainable “cooling” mechanism by leveraging 
+            evaporative cooling. Logged hourly temperature data with Bolt IoT and 
+            applied polynomial regression to predict future temperature changes.
+          </p>
+          <p>
+            <strong>Impact:</strong> Learned the fundamentals of bridging hardware and analytics, 
+            setting the stage for more advanced data-driven solutions.
           </p>
         </div>
       </div>
 
-      <!-- Example Project Card 2 -->
+      <!-- Project Card 2: Fire Detection and Localization -->
       <div class="project-card">
-        <h3 class="project-title">Fire Detection & Localization (Jan – Jun 2021)</h3>
+        <h3 class="project-title">2. Fire Detection & Localization (Jan – Jun 2021)</h3>
         <p class="project-short">
-          Fire detection system using Inception V3 on images of fire, smoke, neutral,
+          Fire detection system using Inception V3 on images (fire, smoke, neutral),
           integrated with IoT for real-time Telegram alerts.
         </p>
         <button class="btn toggle-btn">Read More</button>
         <div class="project-details hidden">
           <p>
-            <strong>Approach:</strong> Combined CNN-based detection (Inception V3) with
-            Bolt Wi-Fi module for hardware alerts. Achieved ~87% validation accuracy.
-            Future expansions include bounding box detection and GPS for localization.
+            <strong>Objective & Approach:</strong> Combined CNN-based detection (Inception V3) with 
+            a Bolt Wi-Fi module and OpenCV for real-time image analysis. 
+            Sent alert messages to a Telegram chatbot when fire detection 
+            confidence exceeded a threshold.
+          </p>
+          <p>
+            <strong>Dataset & Augmentation:</strong> 3,000 images in Fire, Smoke, and Neutral categories. 
+            Achieved 91.05% training accuracy, 87.23% validation accuracy with flipping, zooming, 
+            and dropout layers to mitigate overfitting.
+          </p>
+          <p>
+            <strong>Future Scope:</strong> Incorporate bounding box detection and GPS 
+            for real-time localization in large landscapes.
           </p>
         </div>
       </div>
 
-      <!-- Repeat for your other projects: DRL Stock Trading, DRL Traffic, CC Fraud, F1 Data, etc. -->
-      <!-- Add as many .project-card blocks as you want! -->
+      <!-- Project Card 3: DRL Stock Trading -->
+      <div class="project-card">
+        <h3 class="project-title">
+          3. Deep Reinforcement Learning-based Automated Stock Trading (Jan 2021 - Oct 2022)
+        </h3>
+        <p class="project-short">
+          Enhanced DRL architecture with short selling thresholds for equities, 
+          outperforming previous models by 11.4% p.a.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Highlights:</strong> Proposed shorting threshold frameworks and tested DRL 
+            algorithms under varied market turbulence. Reduced max drawdown by 10%.
+          </p>
+          <p>
+            <strong>Research:</strong> Co-authored a paper presented at the 26th Int’l Symposium 
+            on Methodologies for Intelligent Systems (Springer LNAI vol. 13515).
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Python, OpenAI Gym, DRL algorithms, Algorithmic Trading 
+            frameworks, Financial Indicators.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 4: Google Internship -->
+      <div class="project-card">
+        <h3 class="project-title">
+          4. Internship at Google via DKSH Smollan (Jul 2021 - Jul 2022)
+        </h3>
+        <p class="project-short">
+          Built Chatbot using RASA and optimized BI pipelines with Google BigQuery 
+          for Google Retail Service Agents.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Chatbot Development:</strong> Leveraged RASA, Telegram API, Twilio, 
+            and hosted on GCP. Provided multilingual support (English, Hindi, Hinglish, Korean).
+          </p>
+          <p>
+            <strong>BI Pipeline:</strong> Reduced load times by 50% through efficient data flows 
+            in BigQuery and data visualizations in Google Data Studio.
+          </p>
+          <p>
+            <strong>Tools:</strong> Python, Web Scraping, Data Visualization, Cloud Computing, SQL, Docker, Git, Flask, RASA.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 5: DRL Traffic Control -->
+      <div class="project-card">
+        <h3 class="project-title">
+          5. Deep Reinforcement Learning-based Intelligent Traffic Control (Jul 2022 - Sep 2023)
+        </h3>
+        <p class="project-short">
+          Optimized traffic signals using DDPG and DQN, reducing average waiting time by 23% 
+          across a grid of intersections.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Objective:</strong> Compare DRL methods (DQN, DDPG) against Fixed Signal Time approach. 
+            Achieved 67% lower average wait time than legacy systems.
+          </p>
+          <p>
+            <strong>Publication:</strong> First authored and presented at IEEE TENSYMP 2023 (Canberra, Australia).
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Python, DRL frameworks, Intelligent Traffic Management Systems.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 6: Credit Card Fraud Detection -->
+      <div class="project-card">
+        <h3 class="project-title">6. Credit Card Fraud Detection (Oct - Dec 2023)</h3>
+        <p class="project-short">
+          Logistic regression model with SMOTE to handle class imbalance, 95% ROC AUC 
+          on a highly imbalanced dataset.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Approach:</strong> Feature engineering with binning, WOE, and IV to enhance performance. 
+            Visualized risk categories using donut charts.
+          </p>
+          <p>
+            <strong>Tools:</strong> Python, Logistic Regression, SMOTE, Git.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 7: Data Scientist at Rutgers UCI Lab -->
+      <div class="project-card">
+        <h3 class="project-title">
+          7. Data Scientist (Research Assistant) at Rutgers UCI Lab (Feb 2024 - Present)
+        </h3>
+        <p class="project-short">
+          Generating synthetic populations for small area estimation, experimenting with 
+          XGBoost and GANs for advanced modeling.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Objective:</strong> Improve teleworking day estimations using 
+            household-level data from ACS and Household Pulse Survey.
+          </p>
+          <p>
+            <strong>Methods:</strong> Iterative Proportional Fitting baseline, followed 
+            by GBT, XGBoost, and GANs to enhance synthetic population fidelity.
+          </p>
+          <p>
+            <strong>Skills:</strong> R, Python, Statistics, GIS, Generative Models, 
+            Advanced Analytics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 8: Formula 1 Data Wrangling & Analysis -->
+      <div class="project-card">
+        <h3 class="project-title">8. Formula 1 Data Wrangling & Analysis (Mar - Apr 2024)</h3>
+        <p class="project-short">
+          Leveraged Ergast API and Quarto to build a web platform for F1 data 
+          exploration, feature creation, and visualization.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Data Collection:</strong> Fetched data via Ergast API and manipulated 
+            using Python and SQLite for structured analysis.
+          </p>
+          <p>
+            <strong>Reporting:</strong> Deployed insights in a Quarto-based webpage, 
+            highlighting EDA and advanced visualizations.
+          </p>
+          <p>
+            <strong>Tools:</strong> Python, Quarto, SQLite, HTML/CSS, FastF1, Git.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 9: Research Paper Recommendation System -->
+      <div class="project-card">
+        <h3 class="project-title">
+          9. Research Paper Recommendation System (2024)
+        </h3>
+        <p class="project-short">
+          NLP-based system utilizing TF-IDF, all-MiniLM-L6-v2, allenai-specter embeddings 
+          with RAG-based explainability.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Methodology:</strong> Preprocessed ~100,000 abstracts from ArXiv, 
+            used LanceDB for scalable embedding retrieval.
+          </p>
+          <p>
+            <strong>Models:</strong> Fine-tuned all-MiniLM-L6-v2, best results with 
+            allenai-specter for domain-specific alignment.
+          </p>
+          <p>
+            <strong>Explainability:</strong> Employed google/flan-t5-large for 
+            natural language rationale generation, enhancing transparency.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Card 10: Commodity Trading with Weather Data -->
+      <div class="project-card">
+        <h3 class="project-title">
+          10. Commodity Trading Using Alternative Data (Jan 2020 - Nov 2024)
+        </h3>
+        <p class="project-short">
+          Developed trading strategies for coffee using weather indicators and 
+          technical signals, improving adaptability and performance.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Data Prep:</strong> Merged hourly weather data with daily coffee prices, 
+            incorporating rolling and lagged features.
+          </p>
+          <p>
+            <strong>Strategies:</strong> Combined MACD, RSI, Bollinger Bands with 
+            weather anomaly flags to refine trade signals.
+          </p>
+          <p>
+            <strong>Evaluation:</strong> Used Sharpe, Sortino, and Calmar ratios 
+            and found robust results even in volatile conditions.
+          </p>
+        </div>
+      </div>
 
     </div>
   </section>
@@ -172,6 +540,8 @@
   </footer>
 
   <!-- Main JS -->
+  <!-- Make sure to include your expanded JavaScript that handles the 
+       "Read More" toggles for each project, scroll-up button, nav toggle, etc. -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
