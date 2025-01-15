@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Arpan Nookala | Data Scientist Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arpan Nookala | Portfolio</title>
-  <!-- Main Stylesheet -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <!-- Font Awesome (Icons) -->
+  <!-- Font Awesome (icons) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -16,58 +17,161 @@
   />
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-logo">
-      <a href="index.html">Arpan Nookala</a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- ================= NAVBAR ================= -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="#home">Arpan Nookala</a>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
 
-  <!-- Hero Section with Image/Text -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Arpan</h1>
-      <p class="hero-subtitle">
-        Data Scientist | ML Engineer | Researcher
+  <!-- ================= HOME SECTION ================= -->
+  <section class="home section" id="home">
+    <div class="home-container">
+      <h1 class="home-title">Hi, I'm Arpan</h1>
+      <p class="home-subtitle">Data Scientist | ML Engineer | Reinforcement Learning Researcher</p>
+      <a href="#about" class="btn home-btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="about section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container container">
+      <!-- Profile Image -->
+      <div class="about-img">
+        <!-- Replace with your real file name/path -->
+        <img src="assets/img/hero.png" alt="Profile Picture" />
+      </div>
+      <div class="about-content">
+        <p>
+          I'm currently a Data Science graduate student at Rutgers University with
+          a deep interest in IoT, advanced Machine Learning, and AI. My background
+          in Electronics Engineering gave me hands-on experiences building sensor-based
+          systems and real-time data pipelines.
+        </p>
+        <p>
+          Over time, I've explored advanced ML topics like Deep Reinforcement
+          Learning, Generative Adversarial Networks, and MLOps for large-scale
+          deployments. I love bridging cutting-edge research with real-world
+          solutions—be it an eco-friendly pot-in-pot refrigerator with IoT temperature
+          logging or a DRL-based intelligent traffic management system.
+        </p>
+        <a href="#contact" class="btn">Connect with Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container container">
+      <div class="skill-box">
+        <i class="fas fa-code skill-icon"></i>
+        <h3>Programming</h3>
+        <p>Python, R, SQL, C++, Java</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-brain skill-icon"></i>
+        <h3>ML &amp; DL Frameworks</h3>
+        <p>scikit-learn, TensorFlow, Keras, PyTorch, OpenAI Gym</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-database skill-icon"></i>
+        <h3>Databases</h3>
+        <p>MySQL, PostgreSQL, BigQuery, NoSQL</p>
+      </div>
+      <div class="skill-box">
+        <i class="fas fa-cloud skill-icon"></i>
+        <h3>Cloud / DevOps</h3>
+        <p>GCP, AWS, Docker, CI/CD, Flask, RASA</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section class="projects section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container container">
+
+      <!-- Example Project Card 1 -->
+      <div class="project-card">
+        <h3 class="project-title">Pot-in-Pot Refrigerator (Jan – Mar 2020)</h3>
+        <p class="project-short">
+          Eco-friendly fridge using two clay pots with IoT (Bolt) for temperature logging,
+          plus polynomial regression for predictive modeling.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Objective:</strong> Build a sustainable “cooling” mechanism using
+            clay pots. Logged temperature hourly and used polynomial regression
+            to forecast temperature changes. Learned the fundamentals of bridging
+            hardware with analytics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Example Project Card 2 -->
+      <div class="project-card">
+        <h3 class="project-title">Fire Detection & Localization (Jan – Jun 2021)</h3>
+        <p class="project-short">
+          Fire detection system using Inception V3 on images of fire, smoke, neutral,
+          integrated with IoT for real-time Telegram alerts.
+        </p>
+        <button class="btn toggle-btn">Read More</button>
+        <div class="project-details hidden">
+          <p>
+            <strong>Approach:</strong> Combined CNN-based detection (Inception V3) with
+            Bolt Wi-Fi module for hardware alerts. Achieved ~87% validation accuracy.
+            Future expansions include bounding box detection and GPS for localization.
+          </p>
+        </div>
+      </div>
+
+      <!-- Repeat for your other projects: DRL Stock Trading, DRL Traffic, CC Fraud, F1 Data, etc. -->
+      <!-- Add as many .project-card blocks as you want! -->
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-container container">
+      <p>
+        Let's connect or collaborate! You can reach me at:
       </p>
-      <a class="btn" href="projects.html">Explore My Work</a>
+      <ul class="contact-info">
+        <li><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:arpan.nookala@rutgers.edu">arpan.nookala@rutgers.edu</a></li>
+        <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arpan-nookala" target="_blank">linkedin.com/in/arpan-nookala</a></li>
+        <li><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/arpannookala12" target="_blank">github.com/arpannookala12</a></li>
+      </ul>
+      <!-- Optionally add a form or direct link to your resume -->
+      <a href="#" class="btn">Download My Résumé</a>
     </div>
   </section>
 
-  <!-- Intro Section -->
-  <section class="intro-section spread-out">
-    <h2>Welcome to My Portfolio</h2>
-    <p>
-      I’m a Data Science Graduate Student at Rutgers University with a passion 
-      for IoT, advanced ML, and AI applications. My background in Electronics 
-      Engineering has shaped a practical, hands-on approach to problem solving.
-    </p>
-    <p>
-      Feel free to browse my latest projects, including IoT-based 
-      data collection, advanced ML/AI prototypes, and published research in 
-      Reinforcement Learning. I love integrating cutting-edge theory with 
-      real-world solutions.
-    </p>
-    <div class="icon-links">
-      <a href="https://www.linkedin.com/in/arpan-nookala" target="_blank" class="social-icon">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/arpannookala12" target="_blank" class="social-icon">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <p>&copy; 2025 Arpan Nookala. All rights reserved.</p>
+    <p>© 2024 Arpan Nookala. All rights reserved.</p>
+    <a href="#home" class="back-to-top" id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </footer>
 
+  <!-- Main JS -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
